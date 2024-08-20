@@ -1,0 +1,120 @@
+<!Doctype html>
+<html lang = "pt-br">
+ <head>
+     <meta charset = "UTF-8">
+	 <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+	 <title> Atividade 1 </title>
+	 <link rel = "stylesheet" type = "text/css" href = "css/site.css">
+ </head>
+ <body>
+     <header> 
+	     <img src = "imgs/logo.png" alt = "Logo da página" title = "Logo da página">
+		 <h1> Atividade 1 </h1>
+	 </header>
+	   <nav class = "atividades">
+         <a href = "while.html"> <div class = "opcao1"> While </div></a>
+		  </nav>
+  <body bgcolor = "#CCCCCC">
+  <p class = "paragráfo"> Coleta três números digitados e mostra qual o maior entre eles. <br> (Use Ctrl+shift+j para ver o console log!)</p>
+    <center>
+       <form>
+         <br>
+        <textarea name = "fonte" cols = "130" rows = "80">  
+          <html>
+            <head>
+              <meta charset = "UTF-8"> 
+		      <style>
+			  /*Configurações gerais */
+section {
+	      margin-top: 0px;
+        }
+.cadnumero {
+             width: 300px;
+             margin: 0px auto;
+             font-weight: bold;
+             margin-bottom: 10px;
+            }			 
+.cadnumero input {
+            margin: 5px auto;
+            width: 100%;
+			padding: 5px 0;
+           }
+.cadnumero button {
+	                width: 30%;
+					margin: 0 10%;
+					background-color: #fecdd3;
+					font-weight: bold;
+					font-size: 18px;
+					
+                  }
+	label {
+		   float: left;
+	      }
+	h2 {
+		 text-align: center;
+		 margin-top: 0px;
+		 margin-bottom: 10px;
+		 font-size: 50px;
+	   }
+		</style>
+		</head>
+		<body>
+		<!Doctype html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+		<title> Estrutura SE Javascript </title>
+		<link rel = "stylesheet" type="text/css" href="css/cfgat6.css">
+		<script src="js/validacoes.js"></script>
+		</head>
+	<body>
+	   <section>
+	   <h2> Atividade 2 - Maior número  </h2>
+	   <font face="arial">
+	   <form name="frmnumero" action="#" method="get" onsubmit="return validaFormulario()">
+	   <fieldset class="cadnumero">
+	     <legend> Entrada de dados </legend>
+	   <br>
+	    <button type="submit"> Enviar </button>
+		</fieldset>
+	    </form>
+		</font>
+		</section>
+	</body>
+</html>
+        <script type = "text/Javascript">
+		function validaFormulario() {
+	let conta = 1;
+	let maior = 0;
+	let numero;
+	 while (conta<=3){
+		
+		numero = parseInt (prompt("Digite o número"));
+		console.log("O número informado é: " + numero);
+		if (numero > maior ){
+			maior = numero;
+	     }
+		 conta = conta + 1;
+	      }		 
+		 console.log ("O maior número digitado é: " + maior);
+	    return false;
+	 
+	
+}
+	
+	</script>
+	   </body>
+  </html>
+  
+  
+  
+  
+  
+</textarea>
+ <br><br>
+<input type = "button" value = "Executar página" onclick = "document.write(fonte.value);">
+</form>
+</center>
+ </body>
+ </html>
+			  

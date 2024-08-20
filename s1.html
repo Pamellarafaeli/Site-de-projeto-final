@@ -1,0 +1,133 @@
+<!Doctype html>
+<html lang = "pt-br">
+ <head>
+     <meta charset = "UTF-8">
+	 <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+	 <title> Atividade 1 </title>
+	 <link rel = "stylesheet" type = "text/css" href = "css/site.css">
+ </head>
+ <body>
+     <header> 
+	     <img src = "imgs/logo.png" alt = "Logo da página" title = "Logo da página">
+		 <h1> Atividade 1 </h1>
+	 </header>
+	   <nav class = "atividades">
+         <a href = "switch.html"> <div class = "opcao1"> Switch </div></a>
+		  </nav>
+  <body bgcolor = "#CCCCCC">
+  <p class = "paragráfo"> Coleta a idade da pessoa.<br>Caso menor que 3 anos é bebê,menor que 10 é criança <br> e maior que 18 é adulto.</p>
+    <center>
+       <form>
+         <br>
+        <textarea name = "fonte" cols = "130" rows = "80">  
+          <html>
+            <head>
+              <meta charset = "UTF-8"> 
+		      <style>
+			  /*Configurações gerais */
+section {
+	      margin-top: 0px;
+        }
+.cadnumero {
+             width: 300px;
+             margin: 0px auto;
+             font-weight: bold;
+             margin-bottom: 10px;
+            }			 
+.cadnumero input {
+            margin: 5px auto;
+            width: 100%;
+			padding: 5px 0;
+           }
+.cadnumero button {
+	                width: 30%;
+					margin: 0 10%;
+					background-color: #fecdd3;
+					font-weight: bold;
+					font-size: 18px;
+					
+                  }
+	label {
+		   float: left;
+	      }
+	h2 {
+		 text-align: center;
+		 margin-top: 0px;
+		 margin-bottom: 10px;
+		 font-size: 50px;
+	   }
+		</style>
+		</head>
+	    <body>
+		<!Doctype html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+		<title> Estrutura SE Javascript </title>
+		<link rel = "stylesheet" type="text/css" href="css/cfgat6.css">
+		<script src="js/validacoes.js"></script>
+	</head>
+	<body>
+	   <section>
+	   <h2> Estrutura Caso (switch() ) - Atividade 1  </h2>
+	   <font face="arial">
+	   <form name="frmnumero" action="#" method="get" onsubmit="return validaFormulário()">
+	   <fieldset class="cadnumero">
+	     <legend> Entrada de dados </legend>
+	   <br>
+	    <label for="numero"> Informe um número inteiro </label>
+		<input type="text" name="txtnumero" id="numero"><br>
+	   <br>
+	    <button type="reset"> Limpar </button><button type="submit"> Enviar </button>
+		</fieldset>
+	    </form>
+		</font>
+		</section>
+	</body>
+</html>
+  <script type = "text/Javascript">
+  function validaFormulário() {
+                        if (document.frmnumero.txtnumero.value=="") {
+                         alert ("Preencha o campo número inteiro");
+						 return false;
+						} else {
+						    let numero = parseInt(document.getElementById('numero').value);
+				 	        switch (true) {
+						     case (numero>=0 && numero<=3):
+						         alert ("Bebê");
+								 break;
+					          case (numero>=4 && numero<=10):
+						           alert ("Criança");
+		                           break;
+						     case (numero>=11 && numero<=18):
+						           alert ("Adolescente");
+							       break;	 
+							default:
+							   alert ("Adulto");
+							}	
+					       return false;
+							 
+						
+						
+						
+				
+						
+							}	
+						
+						
+                    }
+  </script>
+   </body>
+  </html>
+  
+  
+  
+  
+  
+</textarea>
+ <br><br>
+<input type = "button" value = "Executar página" onclick = "document.write(fonte.value);">
+</form>
+</center>
+ </body>
+ </html>

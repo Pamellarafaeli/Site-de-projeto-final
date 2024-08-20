@@ -1,0 +1,154 @@
+<!Doctype html>
+<html lang = "pt-br">
+ <head>
+     <meta charset = "UTF-8">
+	 <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+	 <title> Atividade 2 </title>
+	 <link rel = "stylesheet" type = "text/css" href = "css/site.css">
+ </head>
+ <body>
+     <header> 
+	     <img src = "imgs/logo.png" alt = "Logo da página" title = "Logo da página">
+		 <h1> Atividade 2 </h1>
+	 </header>
+	   <nav class = "atividades">
+         <a href = "switch.html"> <div class = "opcao1"> Switch </div></a>
+		  </nav>
+  <body bgcolor = "#CCCCCC">
+  <p class = "paragráfo"> Pede ao usuário um número e ao digitá-lo, saberá qual mês é. <br> (Use Ctrl+Shift+J para abrir o console log!)</p>
+    <center>
+       <form>
+         <br>
+        <textarea name = "fonte" cols = "130" rows = "80">  
+          <html>
+            <head>
+              <meta charset = "UTF-8"> 
+		      <style>
+			  /*Configurações gerais*/
+section{
+	    margin-top:0px auto;
+       }
+.cadmes{
+	       width:300px;
+		   margin:0px auto;
+		   font-weight:bold;
+		   margin-bottom:10px;
+          }
+.cadmes input{
+	             margin:5px auto;
+				 width:100%;
+				 padding:5px 0;
+                }
+.cadmes button{
+	              width:30%;
+				  margin:0 10%;
+				  background-color:#fecdd3;
+				  font-weight:bold;
+				  font-size:18px
+                 }
+label{
+	  float:left;
+     }
+  h2{
+	 text-align:center;
+	 margin-top:0px;
+	 margin-bottom:10px;
+	 font-size:50px;
+    }
+	</style>
+	</body>
+	<body>
+	<html lang="pt-BR">
+       <head>
+	        <meta charset="UTF-8">
+			<title>Estrutura CASO Javascript</title>
+			<link rel = "stylesheet" type="text/css" href="css/cfgatl.css">
+			<script src="js/validacoes.js"></script>
+		</head>
+		<body>
+		     <section>
+			     <h2> Atividade - Meses - Lógica de programação</h2>
+				  <font face="arial">
+				  <form name="frmnumero" action="#" method="get" onsubmit="return validaFormulario()">
+				  <fieldset class="cadmes">
+				     <legend>Entrada de dados</legend>
+					 <br>
+						<label for="mes">Mês 1 ou 2...12 : </label>
+						<input type="text" name="txmes" id = "mes"><br>
+					    <br>
+						<br>
+					    <button type="reset">Limpar</button><button type="submit">Enviar</button>
+				   </fieldset>
+				   </form>
+				  </font>
+			</section>
+</body>
+</html>
+<script type = "text/Javascript">
+function validaFormulario(){
+	 if(document.frmnumero.txmes.value==""){
+		alert("Preencha o campo Mês 1 ou 2...12");
+		document.frmnumero.txmes.focus;
+		return false;
+	 }else{
+		  let mes = parseInt (document.getElementById('mes').value);
+		  switch(mes){
+			          case 1:
+							console.log("O número " + mes + " é janeiro.");
+					  break;
+					  case 2:
+					         console.log("O número " + mes + " é fevereiro.");
+					  break;
+					  case 3:
+					         console.log("O número " + mes + " é março.");
+					  break;
+					  case 4:
+					         console.log("O número " + mes + " é abril.");
+					  break;
+					  case 5:
+					         console.log("O número " + mes + " é maio.");
+					  break;
+					  case 6:
+					         console.log("O número " + mes + " é junho.");
+					  break;
+					  case 7:
+					         console.log("O número " + mes + " é julho.");
+					  break;
+					  case 8:
+					         console.log("O número " + mes + " é agosto.");
+					  break;
+					  case 9:
+					         console.log("O número " + mes + " é setembro.");
+					  break;
+					  case 10:
+					          console.log("O número " + mes + " é outubro.");
+					  break;
+					  case 11:
+					          console.log("O número " + mes + " é novembro.");
+					  break;
+					  case 12:
+					          console.log("O número " + mes + " é dezembro.");
+					  break;
+					  default:
+					          console.log("O número digitado não corresponde a um mês do ano.");
+		  }
+		 return false; 
+	 }
+	 
+}
+</script>
+  </body>
+  </html>
+  
+  
+  
+  
+  
+</textarea>
+ <br><br>
+<input type = "button" value = "Executar página" onclick = "document.write(fonte.value);">
+</form>
+</center>
+ </body>
+ </html>
+						   

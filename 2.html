@@ -1,0 +1,150 @@
+<!Doctype html>
+<html lang = "pt-br">
+ <head>
+     <meta charset = "UTF-8">
+	 <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+	 <title> Atividade 2 </title>
+	 <link rel = "stylesheet" type = "text/css" href = "css/site.css">
+ </head>
+ <body>
+     <header> 
+	     <img src = "imgs/logo.png" alt = "Logo da página" title = "Logo da página">
+		 <h1> Atividade 2 </h1>
+	 </header>
+	   <nav class = "atividades">
+         <a href = "if.html"> <div class = "opcao1"> If </div></a>
+		  </nav>
+  <body bgcolor = "#CCCCCC">
+  <p class = "paragráfo"> O programa irá pedir ao usuário para digitar um mês.<br> O programa irá responder qual mês que é.</p>
+    <center>
+       <form>
+         <br>
+        <textarea name = "fonte" cols = "130" rows = "80">  
+          <html>
+            <head>
+              <meta charset = "UTF-8"> 
+		      <style>
+      /*Configurações gerais */
+section {
+	      margin-top: 0px;
+        }
+.cadmeses {
+             width: 300px;
+             margin: 0px auto;
+             font-weight: bold;
+             margin-bottom: 10px;
+            }			 
+.cadmeses input {
+            margin: 5px auto;
+            width: 100%;
+			padding: 5px 0;
+           }
+.cadmeses button {
+	                width: 30%;
+					margin: 0 10%;
+					background-color: #fecdd3;
+					font-weight: bold;
+					font-size: 18px;
+					
+                  }
+	label {
+		   float: left;
+	      }
+	h2 {
+		 text-align: center;
+		 margin-top: 0px;
+		 margin-bottom: 10px;
+		 font-size: 50px;
+	   }
+		</style>
+		</head>
+	    <body>
+		<!Doctype html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+		<title> Estrutura SE Javascript </title>
+		<link rel = "stylesheet" type="text/css" href="css/cfgat6.css">
+		<script src="js/validacoes6.js"></script>
+	</head>
+	<body>
+	   <section>
+	   <h2> Atividade - Meses </h2>
+	   <font face="arial">
+	   <form name="frmmeses" action="#" method="get" onsubmit="return validaFormulário()">
+	   <fieldset class="cadmeses">
+	     <legend> Entrada de dados </legend>
+	   <br>
+	    <label for="mes"> Números de 1 a 12: </label>
+		<input type="text" name="txtmes" id="mes"><br>
+	   <br>
+	    <button type="reset"> Limpar </button><button type="submit"> Enviar </button>
+		</fieldset>
+	    </form>
+		</font>
+		</section>
+	</body>
+</html>
+	 <script type = "text/Javascript">
+function validaFormulário() {
+                        if (document.frmmeses.txtmes.value=="") {
+                         alert ("Preencha o campo");
+						 return false;
+					} else {
+						    let mes = parseInt(document.getElementById('mes').value);
+				 	        if (mes==1) {
+							alert ("O número (" + mes + ") é Janeiro" );
+					} else if (mes==2) {
+								 alert ("O número (" + mes + ") é Fevereiro");
+					} else if (mes==3) {
+						         alert ("O número (" + mes + ") é Março");
+					                  
+					} else if (mes==4) {
+						         alert ("O número (" + mes + ") é Abril");
+				    }else if (mes==5) {
+						         alert ("O número (" + mes + ") é Maio");
+					}else if (mes==6) {
+						         alert ("O número (" + mes + ") é Junho");
+				    }else if (mes==7) {
+						         alert ("O número (" + mes + ") é Julho");
+				    }else if (mes==8) {
+						         alert ("O número (" + mes + ") é Agosto");
+			        }else if (mes==9) {
+						         alert ("O número (" + mes + ") é Setembro");
+					}else if (mes==10) {
+						         alert ("O número (" + mes + ") é Outubro");
+		            }else if (mes==11) {
+						         alert ("O número (" + mes + ") é Novembro");
+		            }else if (mes==12) {
+						         alert ("O número (" + mes + ") é Dezembro");
+				    } else {
+							    alert ("Número inválidos");
+									   }
+					
+				}
+	}
+  </script>
+		  
+	 </body>
+  </html>
+  	
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+  
+  
+  
+  
+  
+</textarea>
+ <br><br>
+<input type = "button" value = "Executar página" onclick = "document.write(fonte.value);">
+</form>
+</center>
+ </body>
+ </html>
